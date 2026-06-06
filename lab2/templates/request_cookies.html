@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Cookie{% endblock %}
+{% block content %}
+<h1>Cookie</h1>
+{% if cookies %}
+    <table class="table table-bordered">
+        <thead><tr><th>Cookie</th><th>Значение</th></tr></thead>
+        <tbody>
+        {% for key, value in cookies.items() %}
+            <tr><td>{{ key }}</td><td>{{ value }}</td></tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>Cookie отсутствуют.</p>
+{% endif %}
+{% endblock %}

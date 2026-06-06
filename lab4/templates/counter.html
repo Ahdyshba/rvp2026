@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Счётчик посещений{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1 class="my-4">Счётчик посещений</h1>
+    <div class="display-1 text-primary">{{ visits }}</div>
+    <p class="lead">Вы посетили эту страницу {{ visits }} раз(а).</p>
+    <a href="{{ url_for('index') }}" class="btn btn-primary">На главную</a>
+</div>
+{% endblock %}

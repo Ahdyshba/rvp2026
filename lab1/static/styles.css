@@ -1,0 +1,14 @@
+body {
+    font-size: 1.25rem;
+}
+
+.avatar {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-justify {
+    text-align: justify;
+}
